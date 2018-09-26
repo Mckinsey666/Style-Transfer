@@ -1,5 +1,5 @@
 # Style-Transfer
-Simple implementation of the classic paper by Gatys et al. Please refer to the original paper: https://arxiv.org/abs/1508.0657.
+Simple implementation of the classic paper by Gatys et al. Please refer to the original paper for more detail: https://arxiv.org/abs/1508.0657.
 ## Usage 
 ```
 >> python3 style_transfer.py -h
@@ -35,18 +35,23 @@ optional arguments:
   --image_size IMAGE_SIZE, --sz IMAGE_SIZE
                         Weight of content image
 ```
-## Results
-![original image](./images/contents/city.png)
+## Overview
+![VGG19](./vgg19.png)
 
+We extract `conv1_1, conv2_1, conv3_1, conv4_1, conv5_1` in VGG19 as the style layers, and `conv4_2` in VGG19 as the content layer. Our goal is to minimize the style and content losses of the generated image.
+
+## Results
+**Original image**
+![original image](./images/contents/city.png)
+***
 **Van gough style**
 ![city + van gough](./images/samples/city+van_gough.png)
-
+***
 **Kanagawa style**
 ![city + kanagawa](./images/samples/city_kanagawa.png)
-
-
+***
 **Picasso style**
 ![city + picasso](./images/samples/city+picasso.png)
-
+***
 **Mondrian style**
 ![city + mondrian](./images/samples/city_mondrian.png)
