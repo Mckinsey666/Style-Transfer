@@ -1,6 +1,6 @@
 # Style-Transfer
 Simple implementation of the classic paper by Gatys et al. Please refer to the original paper: https://arxiv.org/abs/1508.0657.
-# Usage 
+## Usage 
 ```
 >> python3 style_transfer.py -h
 usage: style_transfer.py [-h] [-d {cpu,cuda}] [-i ITERATIONS] [-c CONTENT]
@@ -36,3 +36,17 @@ optional arguments:
                         Weight of content image
 ```
 ## Results
+![original image](./images/contents/city.png)
+
+**Van gough style**
+![city + van gough](./images/samples/city+van_gough.png)
+
+**Kanagawa style**
+![city + kanagawa](./images/samples/city_kanagawa.png)
+
+
+**Picasso style**
+![city + picasso](./images/samples/city+picasso.png)
+
+**Mondrian style**
+![city + mondrian](./images/samples/city_mondrian.png)
