@@ -1,5 +1,5 @@
 # Style-Transfer
-Simple implementation of the classic paper by Gatys et al. Link --> [https://arxiv.org/abs/1508.06576]
+Simple implementation of the classic paper by Gatys et al. Please refer to the original paper: https://arxiv.org/abs/1508.0657.
 # Usage 
 ```
 >> python3 style_transfer.py -h
@@ -35,3 +35,4 @@ optional arguments:
   --image_size IMAGE_SIZE, --sz IMAGE_SIZE
                         Weight of content image
 ```
+## Results
