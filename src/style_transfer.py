@@ -65,9 +65,9 @@ if __name__ == '__main__':
                                 style_img = style_img,
                                 content_layers = content_layers,
                                 style_layers = style_layers,
-                                iterations = 500,
-                                content_weight = 1,
-                                style_weight = 1000000)
+                                iterations = iterations,
+                                content_weight = content_weight,
+                                style_weight = style_weight)
     
     # Saves tensor as image [(0,1)->(0,255)]
     save_image(output_img, os.path.join(output_dir, output))
